@@ -20,7 +20,7 @@ public class EmployeeController {
 
     @GetMapping("/employees")
     public Employee showAllEmployees() {
-        Employee emp1 = new Employee("Vasili");
+        Employee emp1 = new Employee("Vasili Petrov");
         return emp1;
     }
     @GetMapping("/employees/{id}")
