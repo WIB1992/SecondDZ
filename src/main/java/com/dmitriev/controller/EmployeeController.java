@@ -19,9 +19,9 @@ public class EmployeeController {
     }
 
     @GetMapping("/employees")
-    public List<Employee> showAllEmployees() {
-        List<Employee> allEmployees = employeeService.getEmployees();
-        return allEmployees;
+    public Employee showAllEmployees() {
+        Employee emp1 = new Employee("Vasili");
+        return emp1;
     }
     @GetMapping("/employees/{id}")
     public Employee getEmployee(@PathVariable int id) {
